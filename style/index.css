@@ -223,8 +223,7 @@ button{
 
 
 }
-    /* 
-   
+
 /* media qs 500px*/
 
 
@@ -259,9 +258,7 @@ button{
       display: flex;
       flex-wrap:wrap;
     }
-    
-    
-    .textrow{
+     .textrow{
         padding: .5%;
         display: flex;
         justify-content: space-around;
