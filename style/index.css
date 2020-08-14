@@ -26,7 +26,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, section {
 	}
 body {
-	line-height: 1;
+    line-height: 1;
+    font-size: 1.6rem;
+    background-color:#5569DC;
+
 }
 ol, ul {
 	list-style: none;
@@ -47,9 +50,11 @@ table {
 
 
 /*Nav / top text */
-*{
-    border: 1px solid black;
+{
+        border: 1px solid black;
+
 }
+
 .name{
     font-size: 2rem;
 }
@@ -58,51 +63,207 @@ table {
     color:white;
     background-color:#5569DC;
     justify-content: space-between;
-    height:5vh
+    align-items: center;
+    height:10vh;
 }
 
-nav{
-    font-size: 1.6rem;
+nav {
+    padding:2%;
     display:flex;
-    justify-content: flex-end;
-    letter-spacing: 5px;
+    justify-content: space-around;
+    letter-spacing: .3rem;
     color:white;
 }
 
+a {
+    text-decoration: none;
+    color:white;
+    font-style: italic;
+    padding:1%;
+}
 
+.name{
+    padding:1%;
+    margin-left: 4%;
+}
 
 
 
 /****************************************************/
 /*header background coffee pic and contact button styling */
 header{
-    color:white;
-    width:100vw;
-    background-image: url("/pictures/keyboard.jpg");;
+    color:White;
+    width:98.5vw;
+    background-image: url("/pictures/test2.jpg");;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: 90% 90%;
     height: 60vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
 }
 
+.titletext{
+    height: 20%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.hello{
+    margin-right: 16rem;
+}
+    h1 {
+    font-size:3.6rem;
+    padding:1%;
+}
+.stack{
+    font-size:1rem;
 
+}
+.buttonholder{
+    display:flex;
+    justify-content: center;
+}
 
+.contactme{
+    width:15vh;
+    padding: .5%;
+    border: 0 solid;
+    border-radius: 5%;
+    background-color: rgb(156, 154, 154);
+    display:flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
 
 
 
 
 /****************************************************/
 /*pic styling */
+section{
+    padding:1%;
+    color:white;
+}
 .pics{
     width:25%;
 }
 
 .projectsrow{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-
+.textrow{
+    padding: .5%;
+    display: flex;
+    justify-content: space-around;
+}
 
 footer{
+    padding:3%;
+    background-color:#394693;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: rgb(156, 154, 154);
+    color:white;
+}
+
+/* media qs 800px*/
+@media (max-width: 800px){
+    body{
+      font-size:1.8rem;
+    }
+    .textrow{
+        font-size:1.4rem;
+    }
+
+    .name{
+        font-size: 3rem;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height:30vh;
+    }
+    nav {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        letter-spacing: .3rem;
+        align-items: center;
+        color:white;
+    }
+
+    a {
+        font-size: 1.4rem;
+        width: 20vw;
+        border: 1px solid black;
+        text-decoration: none;
+        color:white;
+        font-style: italic;
+        padding:1%;
+        display:flex;
+        justify-content: center;
+        transition: .4s;
+        border-radius: 5%;
+    }
+    a:hover{
+        background-color: black;
+    }
+
+
 
 }
+    /* 
+   
+/* media qs 500px*/
+
+
+  @media (max-width: 500px){
+    body{
+        font-size:1.8rem;
+      }
+
+      .textrow{
+        font-size:1.2rem;
+    }
+
+      .name{
+          padding:3%;
+          font-size: 3rem;
+      }
+      a 
+      {
+        width: 30vw;
+      }
+
+    section{
+       
+    }
+    .pics{
+        width:30%;
+    }
+    *{
+        border: 1px solid black;
+    }
+    .projectsrow{
+      display: flex;
+      flex-wrap:wrap;
+    }
+    
+    
+    .textrow{
+        padding: .5%;
+        display: flex;
+        justify-content: space-around;
+    }    
+
